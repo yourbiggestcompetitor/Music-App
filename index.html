@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musicalme</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="home.asp">Home</a>
-        <a href="search.asp">Search</a>
-        <a href="library.asp">Library</a>
-        
-        
-           </nav>
+    
+    
+    <div class="button-container">
+        <a href="#intro" class="btn">Home</a>
+        <a href="#featured-playlists" class="btn">Featured Playlists</a>
+            <a href="#albums" class="btn">Albums</a>
+            <a href="#reviews" class="btn">User Reviews</a>
+    </div>
 
     <section class="intro">
         <div class="intro-left">
@@ -22,13 +24,14 @@
             <a href="#featured-playlists" class="btn">Featured Playlists</a>
         </div>
         <div class="intro-right">
-            <img src="" alt="Logo">
+            <img src="https://www.languagelearninginstitute.com/wp-content/uploads/2019/06/Music-Language.jpg" alt="Logo">
         </div>
     </section>
 
     <section id="featured-playlists" class="playlists">
+        <h1>Playlists</h1>
         <div class="playlist-card">
-            <img src="" alt="Playlist 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrleRUgYpgtgosQ_TVZi-1mM-B41CQ30wvDw&s" alt="Playlist 1">
             <div class="playlist-info">
                 <h2>Hiphop Mix</h2>
                 <p>Rhymes and Rhythms.</p>
@@ -36,7 +39,7 @@
             <div class="song-count">15 songs</div>
         </div>
         <div class="playlist-card">
-            <img src="" alt="Playlist 2">
+            <img src="https://i1.sndcdn.com/avatars-N25DzSRgunPp6KeP-VfK84g-t240x240.jpg" alt="Playlist 2">
             <div class="playlist-info">
                 <h2>Party Hits</h2>
                 <p>Get the party started .</p>
@@ -44,7 +47,7 @@
             <div class="song-count">20 songs</div>
         </div>
         <div class="playlist-card">
-            <img src="" alt="Playlist 3">
+            <img src="https://i1.sndcdn.com/artworks-iE5vNjzIjcqMxNdW-Tu0spQ-t500x500.jpg" alt="Playlist 3">
             <div class="playlist-info">
                 <h2>Workout Mix</h2>
                 <p>Pump up your workout with these high-energy songs.</p>
@@ -52,34 +55,121 @@
             <div class="song-count">25 songs</div>
         </div>
         <div class="playlist-card">
-            <img src="" alt="Playlist 4">
+            <img src="https://i1.sndcdn.com/avatars-000309114561-pp9xtb-t240x240.jpg" alt="Playlist 4">
             <div class="playlist-info">
                 <h2>Top 40</h2>
                 <p>Stay updated with the latest hits from around the world.</p>
             </div>
-            <div class="song-count">30 songs</div>
+            <div class="song-count">40 songs</div>
         </div>
+
+    
     </section>
-    <section class="review-section">
+    
+
+    <section id="albums" class="album">
+        <h1>Albums</h1>
+        <div class="photo-grid"></div>
+        <div class="photo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Laapataa_Ladies_poster.jpg" alt="Photo 1">
+            <p>Lapaata Ladies</p>
+            <div class="know-more">
+                <!--<button class="know-more-btn" data-target="more-info-1">Know More</button>
+                <input type="checkbox" class="know-more-1" class="know-more-checkbox">-->
+                <details class="know-more1">
+                    <p>info about the album</p>
+                    <button class="Btn">Listen</button>
+                    <summary class="summary">
+                        Know more
+                       
+                    </summary>
+                </details>
+                
+                
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg" alt="Photo 2">
+            <p>Graduation</p>
+            <div class="know-more1">
+                <!--<button class="know-more-btn" data-target="more-info-1">Know More</button>
+                <input type="checkbox" class="know-more-1" class="know-more-checkbox">-->
+                <details class="know-more">
+                    <p>info about the album</p>
+                    <button class="Btn">Listen</button>
+                    <summary class="summary">
+                        Know more
+                       
+                    </summary>
+                </details>
+                <!--<div class="more-info">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae reprehenderit delectus fugiat, illum, pariatur praesentium tempore, molestias qui velit sequi exercitationem ipsum quod eum non. Unde iusto debitis eos officia?</p>
+                    <a href="#" class="listen-now-btn">Listen Now</a>
+                </div>-->
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa53jyGBSJKV7_URHJQWH8awaJ54L_dNnP_g&s" alt="Photo 3">
+            <p>Rockstar</p>
+            <div class="know-more1">
+                <!--<button class="know-more-btn" data-target="more-info-1">Know More</button>
+                <input type="checkbox" class="know-more-1" class="know-more-checkbox">-->
+
+                <details class="know-more">
+                    <p>info about the album</p>
+                    <button class="Btn">Listen</button>
+                    <summary class="summary">
+                        Know more
+                       
+                    </summary>
+                </details>
+                
+                
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Scorpion_by_Drake.jpg/220px-Scorpion_by_Drake.jpg" alt="Photo 3">
+            <p>Scorpion</p>
+            <div class="know-more1">
+                <!--<button class="know-more-btn" data-target="more-info-1">Know More</button>
+                <input type="checkbox" class="know-more-1" class="know-more-checkbox">-->
+
+                <details class="know-more">
+                    <p>info about the album</p>
+                    <button class="Btn">Listen</button>
+                    <summary class="summary">
+                        Know more
+                       
+                    </summary>
+                </details>
+                
+            </div>
+        </div>
+       
+    </section>
+    <section id="reviews">
         <h2>User Reviews</h2>
         <h3>What Our Users Say</h3>
         <div class="review-cards">
             <div class="review-card">
-                <img src="https://via.placeholder.com/100" alt="User Image">
+                <img src="https://i0.wp.com/keiralennox.com/wp-content/uploads/2014/05/20140520-163736.jpg?ssl=1" alt="User Image">
                 <h3>Sri</h3>
                 <p>"The app works really well. Loved it!"</p>
             </div>
             <div class="review-card">
-                <img src="https://via.placeholder.com/100" alt="User Image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYWnqtonqh42Bk4pIZGfzjEGxwcl_uVKLJA&s" alt="User Image">
                 <h3>Jane Smith</h3>
                 <p>"An experience of a lifetime! "</p>
             </div>
             <div class="review-card">
-                <img src="https://via.placeholder.com/100" alt="User Image">
-                <h3>Sam Wilson</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWTFxMelQiOqx8g97yug56HWLwhfOvvWS-A&s" alt="User Image">
+                <h3>Sandra Will</h3>
                 <p>"Amazing features. Love it!"</p>
             </div>
         </div>
+
+
+        
     
         <h3>Submit Your Review</h3>
         <form class="review-form">
@@ -104,9 +194,31 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-    </section>
-    
+        <div>
+            <div class="o-layout__item u-2/5@sm u-1/6@lg"><h5 class="u-subhead u-subhead--secondary">Top  Artists</h5><ul class="o-list-block u-centi"><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Neha Kakkar" class="" href="/artist/neha-kakkar-songs/EkEBV7JAU-I_">Neha Kakkar</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Arijit Singh" class="" href="/artist/arijit-singh-songs/LlRWpHzy3Hk_">Arijit Singh</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Badshah" class="" href="/artist/badshah-songs/d4OwAaEcnD0_">Badshah</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Atif Aslam" class="" href="/artist/atif-aslam-songs/MXn8bhT308U_">Atif Aslam</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Justin Bieber" class="" href="/artist/justin-bieber-songs/deJJWFd1ItE_">Justin Bieber</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Himesh Reshammiya" class="" href="/artist/himesh-reshammiya-songs/N,m6H0-rqiY_">Himesh Reshammiya</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Lata Mangeshkar" class="" href="/artist/lata-mangeshkar-songs/FCtl69DObYg_">Lata Mangeshkar</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Diljit Dosanjh" class="" href="/artist/diljit-dosanjh-songs/oIVHdWIO5F8_">Diljit Dosanjh</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Ed Sheeran" class="" href="/artist/ed-sheeran-songs/bWIDsVrU6DE_">Ed Sheeran</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Shreya Ghoshal" class="" href="/artist/shreya-ghoshal-songs/lIHlwHaxTZ0_">Shreya Ghoshal</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Sanam Puri" class="" href="/artist/sanam-puri-songs/SkNEv3qRhDE_">Sanam Puri</a></li><li class="o-list__item"><a screen_name="home_screen" sec_title="footer_section" title="Armaan Malik" class="" href="/artist/armaan-malik-songs/1iZ7Gi0bi1Y_">Armaan Malik</a></li></ul></div>
+            
+        </div>
 
+    </section>
+
+    
+    <a href="/" class="Back">Back to Top</a>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="https://example.com/terms" target="_blank">Terms and Conditions</a>
+                <a href="https://example.com/privacy" target="_blank">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
     
 </body>
 </html>

@@ -1,9 +1,13 @@
  /* styles.css */
-
-body {
+body{ 
+font-family: Arial, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
 }
+
+
+
 
 .navbar {
     position: fixed;
@@ -44,16 +48,78 @@ body {
     align-items: center;
     padding: 5rem 1rem;
     background-color: #f4f4f4;
-    margin-top: 4rem; /* Added to account for the fixed navbar */
+    margin-top: 4rem; 
 }
 
-.intro-left {
-    max-width: 50%;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
 }
+
+/* Styles for the intro-left section */
+.intro-left {
+    text-align: center;
+    padding: 40px; /* Increased padding for more space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Max width to limit the container's width */
+    margin: 0 auto; /* Center align the container */
+}
+
+.intro-left h1 {
+    font-size: 3em; /* Increased font size */
+    color: #333;
+    margin: 0 0 20px; /* Increased margin bottom for spacing */
+}
+
+.intro-left p {
+    font-size: 1.5em; /* Increased font size */
+    color: #666;
+    margin: 0 0 30px; /* Increased margin bottom for spacing */
+}
+
+.intro-left .btn {
+    display: inline-block;
+    font-size: 1.2em; /* Increased font size */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-left .btn:hover {
+    background-color: grey;
+}
+
 
 .intro-right img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
+}
+
+animated-image {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.animated-image:hover {
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 .btn {
@@ -81,7 +147,7 @@ body {
 
 .playlist-card {
     position: relative;
-    width: calc(20% - 1rem); /* Adjusted to fit 5 cards */
+    width: calc(20% - 1rem); 
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
@@ -112,6 +178,137 @@ body {
     gap: 20px;
     margin-bottom: 40px;
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+
+#featured-playlists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.playlist-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; 
+    text-align: center;
+}
+
+.playlist-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.playlist-info {
+    padding: 15px;
+}
+
+.playlist-info h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.playlist-info p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0 0;
+}
+
+.song-count {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+.playlist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-card:hover .song-count {
+    background-color: #0056b3;
+}
+
+
+
+.album {
+    margin-bottom: 40px; /* Gap between sections */
+}
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #ccc;    
+}
+
+.photo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo p {
+    padding: 10px;
+    text-align: center;
+    font-style:serif ;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .photo {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        width: 100%;
+    }
+}
+.know-more1{
+    font-size: 20px;
+}
+.summary{
+    font-size: 12px;
+    font-style: 12px;
+    color: black;
+}
+.Btn{
+    background-color: green;
+}
+
 
 .review-card {
     border: 1px solid #ccc;
@@ -168,4 +365,123 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styles */
+.o-layout__item {
+    margin-bottom: 20px;
+}
+
+.u-subhead {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.o-list-block {
+    list-style: none;
+    padding: 0;
+}
+
+.o-list__item {
+    margin-bottom: 5px;
+}
+
+.o-list__item a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.o-list__item a:hover {
+    color: #0056b3;
+    background-color: #e6f0ff;
+}
+
+
+@media (min-width: 576px) {
+    .u-2/5@sm {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .u-1/6@lg {
+        width: 16.6667%;
+    }
+}
+
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.Back {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1e90ff;
+    transform: scale(1.1);
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1e90ff;
 }
